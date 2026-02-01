@@ -1,11 +1,9 @@
 global _start
 
 _start:
-    ; "o world" → 8 octets
     mov rax, 0x646c726f77206f
     push rax
 
-    ; "hell" → 4 octets
     push dword 0x6c6c6568
 
     mov rax, 1
